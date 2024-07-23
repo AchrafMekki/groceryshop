@@ -71,7 +71,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Specify default User model 
-AUTH_USER_MODEL = "users.TaskOwner"
+AUTH_USER_MODEL = "users.Customer"
 
 LANGUAGE_CODE = "en-us"
 

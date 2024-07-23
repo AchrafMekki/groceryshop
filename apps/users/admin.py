@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import TaskOwner
+from .models import Customer
 
 
-admin.site.register(TaskOwner)
+admin.site.register(Customer)
