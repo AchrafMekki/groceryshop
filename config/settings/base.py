@@ -53,8 +53,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-# Specify default User model 
-AUTH_USER_MODEL = "users.TaskOwner"
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -70,6 +69,9 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
+
+# Specify default User model 
+AUTH_USER_MODEL = "users.TaskOwner"
 
 LANGUAGE_CODE = "en-us"
 
