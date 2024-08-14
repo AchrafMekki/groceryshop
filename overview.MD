@@ -34,12 +34,20 @@ orders -> combines customer id + product id into order [id, quantity, status]
 ### Functional Requirements
 - register
 - login
-- homepage -> personalised products
-- view product
-- allow to place products into shopping cart
-- place order from shopping cart
+- homepage / user landing page
+    - navigation
+    - personalized products
+    - profile
+        - change personal data
+- browse all products with filters
+- view detailed product information
+- shopping cart
+    - add
+    - remove
+    - checkout
 - pay
 - receive confirmation email
+    - attach invoice
 - rate products
 
 
