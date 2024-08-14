@@ -10,7 +10,9 @@ orders -> combines customer id + product id into order [id, quantity, status]
 
 ## Step 1
 ### Define a mission statement
-- Maintain an easy to use online store, investigate customer data and increase engagement with products.
+- Maintain an easy to use online store for groceries
+- investigate customer data
+- increase engagement with products
 
 ### Define the mission objectives
 - Maintain customers' personal information
@@ -33,11 +35,11 @@ orders -> combines customer id + product id into order [id, quantity, status]
 - register
 - login
 - homepage -> personalised products
-- product index
+- view product
 - allow to place products into shopping cart
 - place order from shopping cart
-- payment
-- confirmation email
+- pay
+- receive confirmation email
 - rate products
 
 
@@ -45,12 +47,12 @@ orders -> combines customer id + product id into order [id, quantity, status]
 - admin-dashboard
 - maintain customer information
 - maintain product information
-- user-sessions
-- shopping cart implementation(how to do?)
-- authentication
+- user-sessions 
+- shopping cart implementation
+- authentication (token)
 - mock payment system
-- create an invoice for each order
-- create model for store ratings
+- create an invoice for each order (.pdf)
+
 
 
 - api/v1/customer/registration/
@@ -59,53 +61,18 @@ orders -> combines customer id + product id into order [id, quantity, status]
 
     ```
         {
-        "username":{
-                "type": "str",
-                "value": "maxm",
-                "required": true,
-            },
-    
-        "first_name": {
-                "type": "str",
-                "value":"Max",
-                "required": true,
-            },
-        "last_name": {
-            "type":"str",
-            "value":"Mustermann",
-            "required": true,
-            },
-        "password": {
-            "type":"password",
-            "value":"maxpw2024!",
-            "required": true,
+        "username":"maxm",
+        "first_name": "Max",
+        "last_name": "Mustermann",
+        "password": "maxpw2024!",
+        "email": "max.mustermann@email.com",
+        "address":"Musterstr. 13, 10000 Musterstadt",
+        "phone":"+4014516266",
+        "title":"Mr."
+        "birthday":"1990-01-01"   
         },
-        "email": {
-            "type":"str",
-            "value":"max.mustermann@email.com",
-            "required":true,
-        },
-        "address":{
-            "type":"str",
-            "value":"Musterstr. 13, 10000 Musterstadt",
-            "required":true,
-        },
-        "phone":{
-            "type":"str",
-            "value":"+4014516266",
-            "required":true,
-        },
-        "title":{
-            "type":"str",
-            "value":"Mr.",
-            "required": false,
-        },
-        "birthday":{
-            "type":"date",
-            "value":"1990-01-01",
-            "required": false,
-        }
-        }
+     
+        
         ```
 
     Request response
